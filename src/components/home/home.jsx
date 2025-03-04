@@ -16,7 +16,7 @@ export const Home = () => {
           <div className="space-x-4 flex">
             <NavLink
               to="/countries"
-              className="inline-block px-6 py-2 text-white bg-blue-600 rounded hover:bg-blue-700 transition flex items-center"
+              className="px-6 py-2 text-white bg-blue-600 rounded hover:bg-blue-700 transition flex items-center"
             >
               Explore Now
               <svg

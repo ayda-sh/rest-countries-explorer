@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 function NavBar() {
   return (
     <nav className="container mx-auto px-8">
-      <div className="flex items-center p-4 shadow py-5">
+      <div className="flex items-center p-4 py-5">
         <a href="/" className="flex items-center">
           <span className="text-black font-bold text-xl">REST</span>
           <span className="text-blue-600 font-bold text-xl">Explorer</span>
