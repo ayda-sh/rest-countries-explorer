@@ -5,6 +5,7 @@ import { About } from "./components/about/about";
 import Layout from "./components/navbar/layout";  
 import { CountryInfo } from "./components/countries/countryInfo";
 
+
 function App() {  
   return (  
     <Routes>  
@@ -12,7 +13,7 @@ function App() {
         <Route path="/" element={<Home />} />  
         <Route path="/countries" element={<Countries />} />  
         <Route path="/about" element={<About />} />  
-        <Route path="/info" element={<CountryInfo />} /> 
+        <Route path="/countries/:countryCode" element={<CountryInfo />} /> 
       </Route>  
     </Routes>  
   );  

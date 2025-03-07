@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { client } from "../../../lib/axios";
+import { NavLink } from "react-router-dom";
 
 export const Countries = () => {
   const [countries, setCountries] = useState([]);
@@ -61,9 +62,9 @@ export const Countries = () => {
             key={item.cca3}
             className="border border-gray-300 rounded-lg p-4 shadow hover:shadow-lg"
           >
-            <a href="#" className="font-semibold text-blue-600 hover:underline">
+            <NavLink to={`/countries/${item.cca3}`} className="font-semibold text-blue-600 hover:underline">
               {item.name.common}
-            </a>
+            </NavLink>
             <p className="text-gray-700">Region: {item.region}</p>
             <p className="text-gray-700">Population: {item.population}</p>
           </div>
