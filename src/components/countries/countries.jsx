@@ -25,7 +25,7 @@ export const Countries = () => {
     setSearch(searchTerm);
 
     if (searchTerm) {
-      const filterCountries = allCountries.filter((countery) => 
+      const filterCountries = allCountries.filter((countery) =>
         countery.name.common.toLowerCase().includes(searchTerm.toLowerCase())
       );
       setCountries(filterCountries);
@@ -39,8 +39,8 @@ export const Countries = () => {
       <h1 className="text-xl font-bold mb-4">Countries</h1>
       <div className="flex mb-4 gap-4">
         <input
-        value={search}
-        onChange={handleSearch}
+          value={search}
+          onChange={handleSearch}
           type="text"
           placeholder="Search by name..."
           className="flex-grow border border-gray-300 p-2 rounded w-full"
